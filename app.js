@@ -4,24 +4,12 @@ scores = [0, 0];
 roundScore = 0;
 activePlayer = 1;
 
-/*
-document.querySelector ('#current-' + activePlayer).textContent = dice;								// setter - sets a value
-document.querySelector ('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';
-
-var x = document.querySelector('#score-0').textContent;												// getter - gets a value
-console.log(x);																						// just an example
-*/
-
 document.querySelector ('.dice').style.display = 'none';											// For not showing the dice picture at the start of the game
 
-/*
-function btn() {
-	// Do something
-}
-btn();
-
-document.querySelector ('.btn-roll').addEventListener ('click', btn);								// Here, 'btn' is a callback function
-*/
+document.getElementById ('score-0').textContent = '0';
+document.getElementById ('score-1').textContent = '0';
+document.getElementById ('current-0').textContent = '0';
+document.getElementById ('current-1').textContent = '0';
 
 document.querySelector ('.btn-roll').addEventListener ('click', function() {						// anonymous function - which we can't use outside anywhere except this selector
 
@@ -37,3 +25,21 @@ document.querySelector ('.btn-roll').addEventListener ('click', function() {				
 
 
 });
+
+
+
+
+/*
+document.querySelector ('#current-' + activePlayer).textContent = dice;								// setter - sets a value
+document.querySelector ('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';
+
+var x = document.querySelector('#score-0').textContent;												// getter - gets a value
+console.log(x);																						// just an example
+
+function btn() {
+	// Do something
+}
+btn();
+
+document.querySelector ('.btn-roll').addEventListener ('click', btn);								// Here, 'btn' is a callback function
+*/
